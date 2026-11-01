@@ -1,222 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nadil Lokuhetti </title>
-    <link rel="icon" href="./image/icon.png" type="image/icon type">
+    <title>Nadil Lokuhetti</title>
+    <link rel="icon" href="./image/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
-
 <body>
-<!-- Navbar  Section Start -->
-<header>
-    <a href="#" class="logo">Nadil <span> Lokuhetti</span>.</a>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
-
-    <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Projects</a></li>
-        <li><a href="#services">Intrest</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="bx bx-moon" id="darkmode"></div>
-    </ul>
-</header>
-<!-- Navbar Section End -->
-
-<!-- Home Section Start -->
-<section class="home" id="home">
-    <div class="social">
-        <a target=”_blank” href="https://github.com/NadilLokuhetti"><i class='bx bxl-github'></i></a>
-        <!-- <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-facebook'></i></a> -->
-        <a target=”_blank” href="https://www.linkedin.com/in/nadil-lokuhetti-8795b8232/"><img src="./image/linkedin.png" class="linkedin"></a>
-    </div>
-
-    <div class="home-img">
-        <img src="./image/Nadil3.png" class="shape">
-    </div>
-    <div class="home-text">
-        <span>Hello, I'm</span>
-        <h1>Nadil Lokuhetti</h1>
-        <h2>Undergraduate Software Engineer</h2>
-        <p>a passionate IT enthusiast which is interested in making an impact in the world!</p>
-        <a target=”_blank” href="https://drive.google.com/file/d/11SGhBEmDjbl4GjfuloyhSTcso0mE1vsw/view?usp=sharing" class="btn">Download CV</a>
-    </div>
-</section>
-<!-- Home Section End -->
-<!-- About Section Start -->
-
-<section class="about" id="about">
-    <div class="heading">
-        <h2>About Me</h2>
-        <span>Introduction</span>
-    </div>
-
-    <div class="about-container">
-        <div class="about-img">
-            <img src="./image/Nadil2.png" alt="">
+    <!-- Navigation -->
+    <!-- <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#top" class="nav-name">Nadil Lokuhetti</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
         </div>
-        <div class="about-text">
-            <p>I'm an undergraduate student at the Informatics Institute of Technology (IIT), I am currently studying
-                 software engineering and have gained proficiency in several programming languages including 
-                 Java, Python, and R. In addition, I have also learned web development technologies such 
-                 as HTML and CSS, as well as SQL for managing and querying databases. Through my studies, 
-                 I have developed the skills necessary to design, develop, test, and maintain software 
-                 systems. I am excited to apply my knowledge and experience in a real-world setting and 
-                 contribute to software development projects.</p>
-            <div class="information">
-                <div class="info-box">
-                    <i class='bx bxs-user'></i>
-                    <span>Nadil Lohim Lokuhetti</span>
-                </div>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> -->
 
-                <div class="info-box">
-                    <i class='bx bxs-phone'></i>
-                    <span>+94 78 378 8167</span>
-                </div>
+    <main id="top">
 
-                <div class="info-box">
-                    <i class='bx bxs-envelope'></i>
-                    <span>lokuhettinadil@gmail.com</span>
-                </div>
-                <div class="info-box">
-                    <img src="./image/linkedin.png" class="linkedin">
-                    <!-- <i class='bx bx-code-alt'></i> -->
-                    <span><a target=”_blank” href="https://www.linkedin.com/in/nadil-lokuhetti-8795b8232/">LinkedIn</a></span>
+        <!-- Hero / Intro -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Nadil Lokuhetti</h1>
+                <!-- <p class="hero-email">lokuhettinadil [AT] gmail [DOT] com</p> -->
+                <p class="hero-bio">
+                    A driven and passionate software engineer with a solid foundation in software engineering
+                    principles, object-oriented design, and modern DevOps practices. Proven hands-on experience
+                    in building scalable backend systems, integrating APIs, and optimizing workflows for
+                    real-world impact. Fast learner, proactive collaborator, and solution-oriented thinker
+                    ready to bring energy, innovation, and value to any forward-thinking tech team.
+                </p>
+                <div class="hero-links">
+                    <a href="https://drive.google.com/file/d/11SGhBEmDjbl4GjfuloyhSTcso0mE1vsw/view?usp=sharing" target="_blank" rel="noopener">
+                        <svg class="hero-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+                        <span>Resume</span>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://www.linkedin.com/in/nadil-lokuhetti04/" target="_blank" rel="noopener">
+                        <svg class="hero-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="https://github.com/NadilLokuhetti" target="_blank" rel="noopener">
+                        <svg class="hero-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <span>GitHub</span>
+                    </a>
                 </div>
             </div>
-            <a target=”_blank” href="https://drive.google.com/file/d/11SGhBEmDjbl4GjfuloyhSTcso0mE1vsw/view?usp=sharing" class="btn">Download Cv</a>
-        </div>
-    </div>
-</section>
-<!-- About Section End -->
-
-<!-- Skills Section Start -->
-
-<section class="skills" id="skills">
-    <div class="heading">
-        <h2>Projects</h2>
-        <!-- <span>My Skills & <span>Projects</span></span> -->
-    </div>
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="./image/skin.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Skin Consultation Management System</h4>
-                <p>system that uses Java OOP concepts in its console and graphical user interface.</p>
-                <a target="_blank" href="https://github.com/NadilLokuhetti/OOP-CW-2nd-year"><i class='bx bx-link' ></i></a>
-
+            <div class="hero-photo">
+                <img src="./image/Nadil.png" alt="Nadil Lokuhetti">
             </div>
-        </div>
+        </section>
 
-        <div class="portfolio-box">
-            <img src="./image/fuel.png" alt="">
-            <div class="portfolio-layer">
-                <h4>A fuel Queue Management system</h4>
-                <p>To handle fuel queues using a graphical user interface,(Java).</p>
-                <a target="_blank" href="https://github.com/NadilLokuhetti/Software-development-CW-2"><i class='bx bx-link' ></i></a>
-                
+        <hr class="section-divider">
+
+        <!-- About -->
+        <section id="about" class="section">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-img-wrap">
+                    <img src="./image/Nadil2.png" alt="Nadil Lokuhetti">
+                </div>
+                <div class="about-content">
+                    <p>
+                        I'm a software engineer currently working as an <strong>Associate Software Engineer
+                        at AMDT School of Creativity</strong>, building and maintaining full-stack web
+                        applications. I completed my <strong>BEng (Hons) Software Engineering</strong> at
+                        the Informatics Institute of Technology (IIT), affiliated with the University of
+                        Westminster.
+                    </p>
+                    <p>
+                        I previously interned as a <strong>Trainee Software Engineer at Dialog Axiata PLC –
+                        Ideamart</strong>, where I built production RESTful APIs, contributed to an API
+                        marketplace redesign, and worked in Agile teams with Java, Spring Boot, Angular,
+                        and React.
+                    </p>
+                    <table class="info-table">
+                        <tr>
+                            <td class="info-label">Name</td>
+                            <td>Nadil Lohim Lokuhetti</td>
+                        </tr>
+                        <!-- <tr>
+                            <td class="info-label">Email</td>
+                            <td><a href="mailto:lokuhettinadil@gmail.com">lokuhettinadil@gmail.com</a></td>
+                        </tr> -->
+                        <tr>
+                            <td class="info-label">LinkedIn</td>
+                            <td><a href="https://www.linkedin.com/in/nadil-lokuhetti04/" target="_blank" rel="noopener">Nadil Lokuhetti</a></td>
+                        </tr>
+                        <tr>
+                            <td class="info-label">Education</td>
+                            <td>BEng (Hons) Software Engineering — IIT / University of Westminster (2022–2025)</td>
+                        </tr>
+                    </table>
+                    <a href="https://drive.google.com/file/d/11SGhBEmDjbl4GjfuloyhSTcso0mE1vsw/view?usp=sharing" target="_blank" rel="noopener" class="cv-btn">Download CV</a>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="portfolio-box">
-            <img src="./image/website.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Toursim website about sri lanka</h4>
-                <p>A website about place in sri lanka to visit.(HTML,CSS & JS)</p>
-                <a target="_blank" href="https://github.com/NadilLokuhetti/Ceylonoholic"><i class='bx bx-link' ></i></a>
-                
+        <hr class="section-divider">
+
+        <!-- Work Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Work Experience</h2>
+
+            <!-- Job 1: AMDT -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Associate Software Engineer</h3>
+                        <p class="exp-company">AMDT School of Creativity — Colombo, Sri Lanka</p>
+                    </div>
+                    <span class="exp-date">Oct 2025 – Present</span>
+                </div>
+                <ul class="exp-points">
+                    <li>Developing and maintaining a University Learning Management System (LMS) using
+                        <strong>Angular</strong> (frontend) and <strong>.NET</strong> (backend), ensuring
+                        scalable architecture and smooth user experience.</li>
+                    <li>Debugging and resolving complex business logic issues to improve system performance
+                        and reliability.</li>
+                    <li>Contributing to a banking system for <strong>Standard Chartered Bank (SCB)</strong>,
+                        working across Angular frontend and backend services to deliver secure financial
+                        solutions.</li>
+                </ul>
             </div>
-        </div>
 
-        <div class="portfolio-box">
-            <img src="./image/hangman.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Hangman game</h4>
-                <p>Python hangman game</p>
-                <a target="_blank" href="https://github.com/NadilLokuhetti/Python-Hangman-game"><i class='bx bx-link' ></i></a>
-                
+            <!-- Job 2: Dialog -->
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Trainee Software Engineer</h3>
+                        <p class="exp-company">Dialog Axiata PLC – Ideamart — Colombo, Sri Lanka</p>
+                    </div>
+                    <span class="exp-date">May 2023 – Apr 2024</span>
+                </div>
+                <ul class="exp-points">
+                    <li>Developed scalable RESTful APIs with <strong>Spring Boot</strong>, including a
+                        Location Tracking API (MSISDN radius detection) and a GSMA-compliant OTP API
+                        to enhance security and cross-network compatibility.</li>
+                    <li>Built a dynamic Common API Caller for third-party integrations and an Admin API
+                        with advanced blacklisting/whitelisting controls.</li>
+                    <li>Developed <strong>Web Widget v3</strong> for secure SMS-based OTP authentication.</li>
+                    <li>Contributed to the redesign of <strong>Ideabiz V2</strong> (API marketplace) to
+                        improve API discoverability.</li>
+                    <li>Worked in Agile teams using Java, Spring Boot, JavaScript/TypeScript, Angular,
+                        React, Node.js, Postman, JIRA, Git, and Bitbucket.</li>
+                </ul>
             </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="./image/marks.png" alt="">
-            <div class="portfolio-layer">
-                <h4>University Mark Predicter</h4>
-                <p>A progression outcome predictor,which can be used by the both staff and students.(Java)</p>
-                <a target="_blank" href="https://github.com/NadilLokuhetti/Software-Development-CW-1"><i class='bx bx-link' ></i></a>
-                
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-sub">For a full list of projects, visit my <a href="https://github.com/NadilLokuhetti" target="_blank" rel="noopener">GitHub</a>.</p>
+
+            <!-- Project: WebScribe -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/marks.png" alt="WebScribe">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag tag-highlight">Final Year Project</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">LLM / RAG</span>
+                        <span class="tag">FastAPI</span>
+                    </div>
+                    <h3 class="project-title">WebScribe — AI-Powered Web Scraping System
+                        <span class="project-year">2025</span>
+                    </h3>
+                    <p class="project-desc">
+                        An AI-driven system that intelligently scrapes, summarizes, and analyzes dynamic
+                        web content using Large Language Models (LLMs) and Retrieval-Augmented Generation
+                        (RAG).
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> Python, Selenium, Hugging Face Transformers, FAISS, FastAPI, Flask, Google Colab</p>
+                    <div class="project-links">
+                        <a href="https://github.com/NadilLokuhetti" target="_blank" rel="noopener">
+                            <svg class="proj-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                            <span>code</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Skills Section End -->
-<!-- Services Section Start -->
-<section class="services" id="services">
-    <div class="heading">
-        <h2>Intrest</h2>
-        <span>My Intrest</span>
-    </div>
-    <div class="services-content">
 
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Web Development</h3>
-            <!-- <a href="#">Learn More</a> -->
-        </div>
+            <!-- Project: LMS -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/website.png" alt="LMS">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag tag-highlight">Full-Stack</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">.NET Core</span>
+                        <span class="tag">React</span>
+                    </div>
+                    <h3 class="project-title">LMS — University Learning Management System
+                        <span class="project-year">2025 – Present</span>
+                    </h3>
+                    <p class="project-desc">
+                        A full-stack web application for managing university learning activities, including
+                        course management, student enrollment, assignment submissions, and communication
+                        between students and lecturers. Designed and implemented frontend and backend
+                        with database integration and user authentication.
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> Angular, .NET Core, Node.js, React</p>
+                </div>
+            </div>
 
-        <div class="services-box">
-            <i class='bx bx-server'></i>
-            <h3>FUll Stack Development</h3>
-            <!-- <a href="#">Learn More</a> -->
-        </div>
+            <!-- Project: Banking System -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/fuel.png" alt="Banking System">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag tag-highlight">Full-Stack</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">.NET Core</span>
+                    </div>
+                    <h3 class="project-title">Banking System — Bank Inventory &amp; Management
+                        <span class="project-year">2025 – Present</span>
+                    </h3>
+                    <p class="project-desc">
+                        A banking management system handling corporate banking operations including client
+                        account management, overdraft processing, interest rate calculations, overdue tracking,
+                        and financial record management with secure backend workflows.
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> Angular, .NET Core</p>
+                </div>
+            </div>
 
-    </div>
-</section>
-<!-- Services Section End -->
+            <!-- Project: Student Support App -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/hangman.png" alt="Student Support System">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag tag-highlight">Mobile App</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">.NET Core</span>
+                    </div>
+                    <h3 class="project-title">University Student Support &amp; Communication System
+                        <span class="project-year">2026</span>
+                    </h3>
+                    <p class="project-desc">
+                        A full-stack mobile application for university students facilitating real-time
+                        communication with internal staff through an integrated chat and support system.
+                        Features class schedule viewing, assignment management, and instant notifications
+                        for schedule changes and announcements.
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> React Native, .NET Core</p>
+                </div>
+            </div>
 
-<!-- Contact Section Start -->
-<section class="contact" id="contact">
-    <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect With Us</span>
-    </div>
-    <div class="contact-form">
-        <a >lokuhettinadil@gmail.com</a>
-    </div>
-</section>
-<!-- Contact Section End -->
-<!-- <div class="footer">
-    <h2>Follow Us</h2>
-    <div class="footer-social">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-         <a href="#"><i class='bx bxs-envelope'></i></a> 
-    </div>
+            <!-- Project: Skin Consultation -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/skin.png" alt="Skin Consultation Management System">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">GUI Swing</span>
+                    </div>
+                    <h3 class="project-title">
+                        <a href="https://github.com/NadilLokuhetti/OOP-CW-2nd-year" target="_blank" rel="noopener">
+                            Skin Consultation Management System
+                        </a>
+                    </h3>
+                    <p class="project-desc">
+                        A desktop management system using Java OOP concepts in both a console and
+                        graphical user interface to manage doctor consultations and patient bookings.
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> Java, Swing GUI</p>
+                    <div class="project-links">
+                        <a href="https://github.com/NadilLokuhetti/OOP-CW-2nd-year" target="_blank" rel="noopener">
+                            <svg class="proj-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                            <span>code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-</div> -->
+            <!-- Project: Tourism Website -->
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="./image/website.png" alt="Tourism Website">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <h3 class="project-title">
+                        <a href="https://github.com/NadilLokuhetti/Ceylonoholic" target="_blank" rel="noopener">
+                            Ceylonoholic — Tourism Website about Sri Lanka
+                        </a>
+                    </h3>
+                    <p class="project-desc">
+                        A responsive travel website guiding tourists through popular Sri Lankan heritage
+                        sites, nature reserves, and destinations.
+                    </p>
+                    <p class="project-stack"><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                    <div class="project-links">
+                        <a href="https://github.com/NadilLokuhetti/Ceylonoholic" target="_blank" rel="noopener">
+                            <svg class="proj-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                            <span>code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="copyright">
-    &#169; Nadil Lokuhetti| All Right Reserved.</p>
-</div>
+        <hr class="section-divider">
 
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
 
+            <div class="skills-section">
+                <div class="skills-group">
+                    <h4 class="skills-group-title">Languages &amp; Frameworks</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                        <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="devicon-r-plain colored"></i><span>R</span></div>
+                        <div class="skill-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                        <div class="skill-item"><i class="devicon-csharp-plain colored"></i><span>C# / .NET</span></div>
+                        <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                        <div class="skill-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                        <div class="skill-item"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
+                        <div class="skill-item"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+                        <div class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+                        <div class="skill-item"><i class="devicon-react-original colored"></i><span>React Native</span></div>
+                        <div class="skill-item"><i class="devicon-vuejs-plain colored"></i><span>Vue.js</span></div>
+                        <div class="skill-item"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+                        <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class="devicon-selenium-original colored"></i><span>Selenium</span></div>
+                    </div>
+                </div>
 
+                <div class="skills-group">
+                    <h4 class="skills-group-title">Other Skills</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item"><span class="skill-text">OOP &amp; Design Patterns</span></div>
+                        <div class="skill-item"><span class="skill-text">Data Structures &amp; Algorithms</span></div>
+                        <div class="skill-item"><span class="skill-text">Test-Driven Development</span></div>
+                        <div class="skill-item"><span class="skill-text">Git / Bitbucket</span></div>
+                        <div class="skill-item"><span class="skill-text">Agile / Scrum</span></div>
+                        <div class="skill-item"><span class="skill-text">RESTful API Design</span></div>
+                        <div class="skill-item"><span class="skill-text">LLMs &amp; RAG</span></div>
+                        <div class="skill-item"><span class="skill-text">JIRA / Postman</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <hr class="section-divider">
 
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <p>Feel free to reach out for collaborations, opportunities, or just a chat!</p>
+            <ul class="contact-list">
+                <!-- <li>
+                    <strong>Email</strong> —
+                    <a href="mailto:lokuhettinadil@gmail.com">lokuhettinadil@gmail.com</a>
+                </li> -->
+                <li>
+                    <strong>LinkedIn</strong> —
+                    <a href="https://www.linkedin.com/in/nadil-lokuhetti04/" target="_blank" rel="noopener">
+                        linkedin.com/in/nadil-lokuhetti04
+                    </a>
+                </li>
+                <li>
+                    <strong>GitHub</strong> —
+                    <a href="https://github.com/NadilLokuhetti" target="_blank" rel="noopener">
+                        github.com/NadilLokuhetti
+                    </a>
+                </li>
+            </ul>
+        </section>
 
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Nadil Lokuhetti | All Rights Reserved.</p>
+    </footer>
 
-
-
-    <!-- Javascript -->
     <script src="script.js"></script>
 </body>
-
 </html>

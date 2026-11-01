@@ -1,27 +1,46 @@
-let header = document.querySelector("header");
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+// Dynamic copyright year
+document.getElementById('year').textContent = new Date().getFullYear();
 
-window.addEventListener("scroll", () => {
-  header.classList.toggle("shadow", window.scrollY > 0);
+// Mobile hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
 });
 
-menu.onclick = () => {
-  navbar.classList.toggle("active");
-};
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
+// Close mobile menu when a link is clicked
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+    });
+});
 
-// Dark Mode / light mode
-let darkmode = document.querySelector("#darkmode");
+// Close mobile menu on outside click
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+    }
+});
 
-darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
-    document.body.classList.add("active");
-  } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
-    document.body.classList.remove("active");
-  }
-};
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id], main[id]');
+const navLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + entry.target.id) {
+                    link.style.color = '#1a6fdb';
+                    link.style.fontWeight = '600';
+                } else {
+                    link.style.fontWeight = '';
+                }
+            });
+        }
+    });
+}, { rootMargin: '-40% 0px -55% 0px' });
+
+sections.forEach(section => observer.observe(section));
